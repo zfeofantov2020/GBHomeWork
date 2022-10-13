@@ -1,0 +1,37 @@
+Задача 19
+
+Напишите программу, которая принимает на вход 
+пятизначное число и проверяет, является ли оно палиндромом.
+
+14212 -> нет
+
+12821 -> да
+
+23432 -> да
+
+Console.Clear();
+Console.WriteLine("Task19");
+Console.WriteLine("Insert 5 digit number");
+int num = Convert.ToInt32(Console.ReadLine());
+int num1 , num2 ,num3 ,num4 ,num5 ,num6 = 1;
+if (num < 9999 || num > 99999)
+    {
+        Console.WriteLine("Inserted wrong number , try again");
+    }
+num1 = num / 1000;
+num2 = num % 100;
+num3 = num1 / 10;
+num4 = num1 % 10; 
+num5 = num2 / 10;
+num6 = num2 % 10; 
+
+if(num3 == num6 || num4 == num5)
+
+    {
+        Console.WriteLine("TRUE");
+    }
+else 
+    {
+        Console.WriteLine("FALSE");
+    }
+
