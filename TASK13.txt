@@ -14,3 +14,4 @@ if (anyNumberText.Length > 2){
 else {
   Console.WriteLine("-> third number missing");
 }
+
