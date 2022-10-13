@@ -18,3 +18,5 @@ else
     {
         Console.WriteLine($"Number {num1} can't be deviced without remainder ");
     }
+
+    
